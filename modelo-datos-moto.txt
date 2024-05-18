@@ -1,0 +1,11 @@
+{
+"brand": "Yamaha",
+"model": "Faizer 600",
+"year": "2006",
+"engineType": "CP3",
+"horsepower": "98cv",
+"torque": "63Nm",
+"weight": "180kg",
+"topSpeed": "230k/h",
+"color": "black"
+}

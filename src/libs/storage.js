@@ -5,7 +5,12 @@ const storage = multer.diskStorage({
         cb(null, './src/uploads')
     }, 
     filename: function(req, file, cb){
-        cb(null, `${file.fieldname}-${Date.now()}.jpg`)
+        // Me gusta mas que se mantenga el nombre original del archivo :P
+        //Para que no se repitan los nombres de los archivos, evitamos errores!
+
+        const timestamp = Date.now(); //  timestamp actual
+        const originalName = file.originalname; //  nombre original del archivo
+        cb(null, `${timestamp}-${originalName}`); // tenemos nombre único!
 
     }
 })

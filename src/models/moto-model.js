@@ -5,7 +5,7 @@ const motoSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    model: {
+     model: {
         type: String,
         required: true
     }, 
@@ -44,7 +44,7 @@ const motoSchema = mongoose.Schema({
     price: {
         type: Number,
         required: true
-    }
+    } 
 });
 
 // Define setImgUrl method on the schema
